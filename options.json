@@ -1,1 +1,88 @@
-{"WINDOW": {"TITLE": "Visual Management Area", "": 1}, "BUTTON": {"ICON": "Folder_Icon.png"}, "DISPLAY_LAYOUT": {"hss": {"1": {"Display": "\\\\.\\DISPLAY10", "last_file": ""}, "2": {"Display": "\\\\.\\DISPLAY5", "last_file": ""}, "3": {"Display": "\\\\.\\DISPLAY6", "last_file": ""}}, "opex": {"1": {"Display": "\\\\.\\DISPLAY4", "last_file": "C:/Users/u989663/Pictures/Saved Pictures/Screenshot 2022-03-22 172944.png"}, "2": {"Display": "\\\\.\\DISPLAY7", "last_file": ""}, "3": {"Display": "\\\\.\\DISPLAY8", "last_file": ""}}, "qa": {"1": {"Display": "\\\\.\\DISPLAY11", "last_file": ""}}, "proj": {"1": {"Display": "\\\\.\\DISPLAY9", "last_file": ""}}}, "AUTO": {"On": "7:00", "Off": "22:00"}}
+{
+    "WINDOW": {
+        "TITLE": "Visual Management Area",
+        "": 1
+    },
+    "BUTTON": {
+        "ICON": "Folder_Icon.png"
+    },
+    "DISPLAY_LAYOUT": {
+        "hss": {
+            "7": {
+                "Display": 5,
+                "last_file": ""
+            },
+            "3": {
+                "Display": 0,
+                "last_file": ""
+            },
+            "4": {
+                "Display": 4,
+                "last_file": ""
+            }
+        },
+        "opex": {
+            "5": {
+                "Display": 3,
+                "last_file": ""
+            },
+            "1": {
+                "Display": 2,
+                "last_file": ""
+            },
+            "2": {
+                "Display": 1,
+                "last_file": ""
+            }
+        },
+        "qa": {
+            "8": {
+                "Display": 6,
+                "last_file": ""
+            }
+        },
+        "proj": {
+            "6": {
+                "Display": 7,
+                "last_file": ""
+            }
+        }
+    },
+    "AUTO": {
+        "On": "7:00",
+        "Off": "22:00"
+    },
+    "HARDWARE_QT_MAP": {
+        "1": {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "4",
+            "5": "3",
+            "6": "7",
+            "7": "5",
+            "8": "6"
+        },
+        "2": {
+            "1": "2",
+            "2": "0",
+            "3": "1",
+            "4": "4",
+            "5": "3",
+            "6": "7",
+            "7": "5",
+            "8": "6"
+        },
+        "3": {
+            "1": "2",
+            "2": "1",
+            "3": "0",
+            "4": "4",
+            "5": "3",
+            "6": "7",
+            "7": "5",
+            "8": "6"
+        }
+    },
+    "PRIMARY_DISPLAY": "3"
+}

@@ -45,14 +45,24 @@ def turnoff_screens():
 
 def turnon_screen(file, display):
     '''
+    directx-draw
     ____________________________________
  	|DISPLAY |DISPLAY |DISPLAY |DISPLAY |
-	|___10__ |___11___|___4____|___9____|
+	|___10___|___11___|___8____|___9____|
 	|DISPLAY |DISPLAY |DISPLAY |DISPLAY |
-	|___5____|____6___|___7____|___8____|
+	|___5____|____6___|___7____|___4____|
+
+    
+    Direct3D11 - qt
+    ____________________________________
+ 	|DISPLAY |DISPLAY |DISPLAY |DISPLAY |
+	|___5____|___7____|___0____|___1____|
+	|DISPLAY |DISPLAY |DISPLAY |DISPLAY |
+	|___3____|___6____|___4____|___2____|
     
     '''
-    subprocess.run(['VLC Screen Arrangement.bat', file, display])
+
+    subprocess.run(['VLC Screen Arrangement.bat', file, str(display)])
     pass
 
 

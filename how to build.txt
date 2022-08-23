@@ -1,0 +1,49 @@
+When any changes are made to the Visual Management Area files, you will need to build it using PyInstaller Library.
+
+PyInstaller is a python library that reads into the python intrepreter binaries so that they can be included in the executable.
+
+
+
+INSTALLING PYINSTALLER:
+
+Using pip install command (needs python to be installed and added to PATH)
+
+1: open a cmd terminal
+2: type: "pip install pyinstaller"
+3: let it finish
+
+*note: this will not work if you are signed into Umicore AnyConnect VPN due to policy.
+
+but do not fret, there is another way.
+
+Using downloaded package (needs python to be installed and added to PATH - Otherwise you will need to find the Python installation folder)
+
+1: Download the .tar.gz from this website https://pypi.org/project/pyinstaller/#files
+2: open cmd
+3: type "pip install --no-index <file path from step 1>"
+4: let it finish
+
+*Further information: https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-from-local-archives
+
+PyPI is the official python package repository
+
+
+USING PYINSTALLER TO BUILD THE EXECUTABLE:
+
+All you need is a single command but you need to make sure you open a cmd terminal in the folder where the python files are.
+You can use "cd <path>" to navigate to the folder where the python file are located or just open the folder yourself and type "cmd" in the address bar.
+
+Building for windows > Type "pyinstaller -n "VMA" --hidden-import "VisualManagementArea.py" --add-data "options.json;."  --add-data "VLC Screen Arrangement.bat;." --add-data "VLC Screens Off.bat;." -w  Interface.py" > when prompted, type "y" and press enter (it asks if you want to replace existing build with the same name)
+
+Explanation of options:
+
+-n: name of resulting build executable
+--hidden-import: adds any other python files imported to the main (interface) python file
+--add-data: adds other files to the resulting build directory
+-w: generates a build that uses a window rather than a console.
+
+This will generate a portable VMA executable in the "dist" folder. The folder that you can copy to the visual management area computer is the "VMA" folder inside the "dist" folder. You can just copy the folder to the visual management area computer and paste it in C:\VM_tasks\
+
+
+
+
